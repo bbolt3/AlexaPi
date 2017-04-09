@@ -52,7 +52,7 @@ alexa:
 triggers:
   platform:
     enabled: true
-    voice_confirm: false
+    voice_confirm: true
 
     # one of: oneshot-vad, continuous, continuous-vad
     event_type: "oneshot-vad"
@@ -139,6 +139,11 @@ platforms:
     min_seconds_to_record: 3
 
   dummy:
+
+  dummynetwork:
+    host_IP: "192.168.88.5"
+    host_port: 9500
+    client_IP: "192.168.88.8"
 
   magicmirror:
     # Magic Mirror - github.com/MichMich/MagicMirror
